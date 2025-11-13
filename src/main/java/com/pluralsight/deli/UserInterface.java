@@ -8,7 +8,7 @@ public class UserInterface {
 
     public void display() {
         while (true) {
-            System.out.println("=== DELI-cious POS ===");
+            System.out.println("=== The Deli-cious Deli ===");
             System.out.println("1) New Order");
             System.out.println("0) Exit");
             System.out.print("Choice: ");

@@ -47,7 +47,8 @@ Include screenshots or GIFs that show your application in action. Use tools like
 
 ## Class Diagram
 
-[Diagram Screenshot](![img.png](img.png))
+![Diagram Screenshot] <img width="1090" height="742" alt="image" src="https://github.com/user-attachments/assets/2ca961f2-63fb-40eb-b4bc-e7b80bc6e6ee" />
+
 
 ## Future Work
 

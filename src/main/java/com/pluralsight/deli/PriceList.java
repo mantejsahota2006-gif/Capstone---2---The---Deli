@@ -23,4 +23,28 @@ public final class PriceList {
             default -> 0.0;
         };
     }
+    public static double extraMeatAddOn(int sizeInches) {
+        return switch (sizeInches) {
+            case 4 -> 0.50;
+            case 8 -> 1.00;
+            case 12 -> 1.50;
+            default -> 0.0;
+        };
+    }
+    public static double cheeseAddOn(int sizeInches) {
+        return switch (sizeInches) {
+            case 4 -> 0.75;
+            case 8 -> 1.50;
+            case 12 -> 2.25;
+            default -> 0.0;
+        };
+    }
+    public static double extraCheeseAddOn(int sizeInches) {
+        return switch (sizeInches) {
+            case 4 -> 0.30;
+            case 8 -> 0.60;
+            case 12 -> 0.90;
+            default -> 0.0;
+        };
+    }
 }

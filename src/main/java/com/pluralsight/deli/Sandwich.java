@@ -23,4 +23,18 @@ public class Sandwich {
         for (Topping t : toppings) total += t.getPrice(size);
         return total;
     }
+    public String displaySandwich() {
+        StringJoiner tj = new StringJoiner(", ");
+        for (Topping t : toppings) {
+            tj.add(t.getName() + (t.isExtra() ? " (extra)" : ""));
+        }
+        return String.format(
+                "%d\" %s%s | Toppings: [%s] | $%.2f",
+                size,
+                breadType,
+                toasted ? " (toasted)" : "",
+                tj.length() == 0 ? "none" : tj.toString(),
+                calculatePrice()
+        );
+    }
 }

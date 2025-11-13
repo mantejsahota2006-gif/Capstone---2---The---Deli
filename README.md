@@ -42,12 +42,16 @@ Follow these steps to get your application running within IntelliJ IDEA:
 
 Include screenshots or GIFs that show your application in action. Use tools like [Giphy Capture](https://giphy.com/apps/giphycapture) to record a GIF of your application.
 
-![Application Screenshot](path/to/your/screenshot.png)
+<img width="1919" height="1031" alt="image" src="https://github.com/user-attachments/assets/aff54fd1-5ff5-4532-812f-57128a8a4c48" />
+
+<img width="1919" height="1033" alt="Screenshot 2025-11-13 183820" src="https://github.com/user-attachments/assets/2820574a-4ebf-40fd-8c93-7cdd3ebb8b06" />
+
+<img width="1919" height="1033" alt="Screenshot 2025-11-13 183643" src="https://github.com/user-attachments/assets/593e3f16-29f1-4336-b2db-5bd74ad1682a" />
 
 
 ## Class Diagram
 
-![Diagram Screenshot] <img width="1090" height="742" alt="image" src="https://github.com/user-attachments/assets/2ca961f2-63fb-40eb-b4bc-e7b80bc6e6ee" />
+ <img width="1090" height="742" alt="image" src="https://github.com/user-attachments/assets/2ca961f2-63fb-40eb-b4bc-e7b80bc6e6ee" />
 
 
 ## Future Work

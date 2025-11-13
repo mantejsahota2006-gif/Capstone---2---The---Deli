@@ -15,4 +15,12 @@ public class Sandwich {
         this.breadType = breadType;
         this.toasted = toasted;
     }
+    public void addTopping(Topping t) {
+        if (t != null) toppings.add(t);
+    }
+    public double calculatePrice() {
+        double total = PriceList.baseSandwichPrice(size);
+        for (Topping t : toppings) total += t.getPrice(size);
+        return total;
+    }
 }

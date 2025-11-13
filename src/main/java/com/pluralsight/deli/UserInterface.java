@@ -62,7 +62,7 @@ public class UserInterface {
             Sandwich s = new Sandwich(size, bread, toasted);
 
             // Quick demo topping prompts (expand as needed)
-            System.out.print("Add meat (comma separated, blank for none). Options: steak, ham, salami, roast beef, chicken, bacon\n> ");
+            System.out.print("Add meat? What we have: steak, ham, salami, roast beef, chicken, bacon\n> ");
             String meats = scanner.nextLine().trim();
             if (!meats.isEmpty()) {
                 for (String m : meats.split(",")) {
@@ -75,7 +75,7 @@ public class UserInterface {
                 }
             }
 
-            System.out.print("Add cheese (comma separated, blank for none). Options: american, provolone, cheddar, swiss\n> ");
+            System.out.print("Add cheese? What we have: american, provolone, cheddar, swiss\n> ");
             String cheeses = scanner.nextLine().trim();
             if (!cheeses.isEmpty()) {
                 for (String ch : cheeses.split(",")) {
@@ -88,7 +88,7 @@ public class UserInterface {
                 }
             }
 
-            System.out.print("Add regular toppings (comma separated, blank for none). Examples: lettuce,onions,peppers,tomatoes,jalapenos,cucumbers,pickles,guacamole,mushrooms\n> ");
+            System.out.print("Add regular toppings? What we have: lettuce,onions,peppers,tomatoes,jalapenos,cucumbers,pickles,guacamole,mushrooms\n> ");
             String regs = scanner.nextLine().trim();
             if (!regs.isEmpty()) {
                 for (String r : regs.split(",")) {
@@ -99,7 +99,7 @@ public class UserInterface {
                 }
             }
 
-            System.out.print("Add sauces (comma separated, blank for none). Examples: mayo,mustard,ketchup,ranch,thousand island,vinaigrette\n> ");
+            System.out.print("Add sauces? What we have: mayo,mustard,ketchup,ranch,thousand island,vinaigrette\n> ");
             String sauces = scanner.nextLine().trim();
             if (!sauces.isEmpty()) {
                 for (String a : sauces.split(",")) {
@@ -114,7 +114,7 @@ public class UserInterface {
             System.out.println("Sandwich added: " + s.displaySandwich());
 
         } catch (Exception e) {
-            System.out.println("Could not add sandwich: " + e.getMessage());
+            System.out.println("Sorry we could not add this sandwich: " + e.getMessage());
         }
     }
 
@@ -122,7 +122,7 @@ public class UserInterface {
         try {
             System.out.print("Drink size (Small/Medium/Large): ");
             String size = scanner.nextLine().trim();
-            System.out.print("Flavor (e.g., Coke, Sprite, Water): ");
+            System.out.print("Flavor: ");
             String flavor = scanner.nextLine().trim();
 
             Drink d = new Drink(size, flavor);
@@ -149,7 +149,7 @@ public class UserInterface {
         System.out.println("\n--- ORDER SUMMARY ---");
         System.out.println(order.toReceiptString());
 
-        System.out.print("Confirm? (y to save receipt / any key to cancel): ");
+        System.out.print("Confirm? (y to save receipt / n to cancel): ");
         String conf = scanner.nextLine().trim();
         if (conf.equalsIgnoreCase("y")) {
             try {
